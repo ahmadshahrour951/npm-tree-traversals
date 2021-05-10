@@ -16,6 +16,13 @@ function bfs(tree, callback) {
   } 
 }
 
+function preorder(item, callback) {
+  if (item !== null) {
+    callback(item.data)
+    preorder(item.left)
+    preorder(item.right);
+  }
+}
 function dfs(traversaType, tree, callback) {
   switch (traversaType) {
     case 'preorder':
