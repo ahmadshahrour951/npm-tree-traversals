@@ -31,6 +31,15 @@ function inorder(item, callback) {
     inorder(item.right)
   }
 }
+
+function postorder(item, callback) {
+  if (item !== null) {
+    postorder(item.left)
+    postorder(item.right)
+    callback(item.data)
+  }
+}
+
 function dfs(traversaType, tree, callback) {
   switch (traversaType) {
     case 'preorder':
