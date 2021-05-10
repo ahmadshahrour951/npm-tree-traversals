@@ -53,3 +53,9 @@ function dfs(traversaType, tree, callback) {
       throw new Error('Traversal type input is not available.')
   }
 }
+
+
+module.exports = {
+  dfs,
+  bfs,
+};
