@@ -16,3 +16,16 @@ function bfs(tree, callback) {
   } 
 }
 
+function dfs(traversaType, tree, callback) {
+  switch (traversaType) {
+    case 'preorder':
+      return preorder(tree, callback);
+    case 'inorder':
+      return inorder(tree, callback);
+    case 'postorder':
+      return postorder(tree, callback);
+    
+    default:
+      throw new Error('Traversal type input is not available.')
+  }
+}
