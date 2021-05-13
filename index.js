@@ -40,8 +40,8 @@ function postorder(item, callback) {
   }
 }
 
-function dfs(traversaType, tree, callback) {
-  switch (traversaType) {
+function dfs(traversalType, tree, callback) {
+  switch (traversalType) {
     case 'preorder':
       return preorder(tree, callback);
     case 'inorder':

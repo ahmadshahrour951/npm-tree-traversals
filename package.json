@@ -1,7 +1,7 @@
 {
-  "name": "bst-inorder-traversals",
+  "name": "bst-traversals",
   "version": "1.0.0",
-  "description": "A package that helps users traverse inorder through a binary search tree.",
+  "description": "A package that helps users traverse through a binary search tree.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
